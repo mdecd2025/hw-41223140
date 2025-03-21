@@ -1,0 +1,332 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cd_hw</title>
+        <meta charset="utf-8">
+<meta property="head" content="H3">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 客製化關閉 -->
+        <!--
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        -->
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushMojo.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushWbt.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container">
+                <div class="row align-items-center">
+                <h1>cd2025 協同產品設計實習41223140</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">cd2025 協同產品設計實習41223140</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">SMap</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='week.html'>week</a><ul class='dropdown'><li><a href='w1.html'>w1</a><li><a href='w3.html'>w3</a><li class='has-children'><a href='w5.html'>w5</a><ul class='dropdown'><li><a href='webots摘要.html'>webots摘要</a><li><a href='文章中的重要的英文單字與解釋, 以及出現在文句中的用法:.html'>文章中的重要的英文單字與解釋, 以及出現在文句中的用法:</a></li></li></ul></ul><li class='has-children'><a href='Homework.html'>Homework</a><ul class='dropdown'><li><a href='HW1.html'>HW1</a><li><a href='HW2.html'>HW2</a><li><a href='HW3.html'>HW3</a></li></ul><li><a href='Midterm.html'>Midterm</a><li class='has-children'><a href='Exam.html'>Exam</a><ul class='dropdown'><li><a href='Exam1.html'>Exam1</a><li><a href='Exam2.html'>Exam2</a><li><a href='Exam3.html'>Exam3</a></li></ul><li><a href='Final.html'>Final</a><li><a href='Brython.html'>Brython</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">webots摘要 << <a href='webots摘要.html'>Previous</a> <a href='Homework.html'>Next</a> >> Homework<br /><h1>文章中的重要的英文單字與解釋, 以及出現在文句中的用法:</h1>
+<ol data-end="4009" data-start="39">
+<li data-end="186" data-start="39">
+<p data-end="60" data-start="42"><strong data-end="60" data-start="42">Simulation（仿真）</strong></p>
+<ul data-end="186" data-start="64">
+<li data-end="88" data-start="64"><strong data-end="72" data-start="66">解釋</strong>：模擬真實世界過程或系統的操作。</li>
+<li data-end="186" data-start="92"><strong data-end="100" data-start="94">用法</strong>："Webots is a professional mobile robot simulation software."（Webots 是一款專業的移動機器人仿真軟體。）</li>
+</ul>
+</li>
+<li data-end="424" data-start="188">
+<p data-end="208" data-start="191"><strong data-end="208" data-start="191">Prototype（原型）</strong></p>
+<ul data-end="424" data-start="212">
+<li data-end="242" data-start="212"><strong data-end="220" data-start="214">解釋</strong>：從中開發出其他形式的產品的初始模型或版本。</li>
+<li data-end="424" data-start="246"><strong data-end="254" data-start="248">用法</strong>："Webots is well suited for research and educational projects related to mobile robotics, including mobile robot prototyping."（Webots 非常適合用於與移動機器人相關的研究和教育項目，包括移動機器人原型製作。）</li>
+</ul>
+</li>
+<li data-end="634" data-start="426">
+<p data-end="447" data-start="429"><strong data-end="447" data-start="429">Locomotion（運動）</strong></p>
+<ul data-end="634" data-start="451">
+<li data-end="480" data-start="451"><strong data-end="459" data-start="453">解釋</strong>：從一個地方到另一個地方移動的能力或行為。</li>
+<li data-end="634" data-start="484"><strong data-end="492" data-start="486">用法</strong>："These robots can have different locomotion schemes (wheeled robots, legged robots, or flying robots)."（這些機器人可以有不同的運動方式（如輪式機器人、腿式機器人或飛行機器人）。）</li>
+</ul>
+</li>
+<li data-end="920" data-start="636">
+<p data-end="656" data-start="639"><strong data-end="656" data-start="639">Actuator（執行器）</strong></p>
+<ul data-end="920" data-start="660">
+<li data-end="687" data-start="660"><strong data-end="668" data-start="662">解釋</strong>：負責移動或控制機械裝置或系統的設備。</li>
+<li data-end="920" data-start="691"><strong data-end="699" data-start="693">用法</strong>："They may be equipped with a number of sensor and actuator devices, such as distance sensors, drive wheels, cameras, motors, touch sensors, emitters, receivers, etc."（它們可能配備多種傳感器和執行器設備，如距離傳感器、驅動輪、攝像頭、電動機、觸摸傳感器、發射器、接收器等。）</li>
+</ul>
+</li>
+<li data-end="1085" data-start="922">
+<p data-end="942" data-start="925"><strong data-end="942" data-start="925">Interface（介面）</strong></p>
+<ul data-end="1085" data-start="946">
+<li data-end="972" data-start="946"><strong data-end="954" data-start="948">解釋</strong>：兩個系統、學科或組織相互作用的點。</li>
+<li data-end="1085" data-start="976"><strong data-end="984" data-start="978">用法</strong>："Webots also contains a number of interfaces to real mobile robots..."（Webots 還包含多個與真實移動機器人接口的功能...）</li>
+</ul>
+</li>
+<li data-end="1269" data-start="1087">
+<p data-end="1106" data-start="1090"><strong data-end="1106" data-start="1090">Behavior（行為）</strong></p>
+<ul data-end="1269" data-start="1110">
+<li data-end="1139" data-start="1110"><strong data-end="1118" data-start="1112">解釋</strong>：機器人或系統響應命令或與環境互動的方式。</li>
+<li data-end="1269" data-start="1143"><strong data-end="1151" data-start="1145">用法</strong>："Finally, the user can program each robot individually to exhibit the desired behavior."（最後，用戶可以為每個機器人單獨編程，表現出所需的行為。）</li>
+</ul>
+</li>
+<li data-end="1566" data-start="1271">
+<p data-end="1289" data-start="1274"><strong data-end="1289" data-start="1274">Physics（物理）</strong></p>
+<ul data-end="1566" data-start="1293">
+<li data-end="1324" data-start="1293"><strong data-end="1301" data-start="1295">解釋</strong>：研究物質和能量的本質及其相互關係的科學領域。</li>
+<li data-end="1566" data-start="1328"><strong data-end="1336" data-start="1330">用法</strong>："Webots offers a rapid prototyping environment, that allows the user to create 3D virtual worlds with physics properties such as mass, joints, friction coefficients, etc."（Webots 提供一個快速原型製作環境，允許用戶創建具有物理屬性（如質量、關節、摩擦係數等）的 3D 虛擬世界。）</li>
+</ul>
+</li>
+<li data-end="1773" data-start="1568">
+<p data-end="1584" data-start="1571"><strong data-end="1584" data-start="1571">Model（模型）</strong></p>
+<ul data-end="1773" data-start="1588">
+<li data-end="1618" data-start="1588"><strong data-end="1596" data-start="1590">解釋</strong>：用於理解或模擬現實世界對等物的系統或物體。</li>
+<li data-end="1773" data-start="1622"><strong data-end="1630" data-start="1624">用法</strong>："Webots contains a large number of robot models and controller program examples to help users get started."（Webots 包含大量的機器人模型和控制程式範例，以幫助用戶入門。）</li>
+</ul>
+</li>
+<li data-end="1950" data-start="1775">
+<p data-end="1797" data-start="1778"><strong data-end="1797" data-start="1778">Controller（控制器）</strong></p>
+<ul data-end="1950" data-start="1801">
+<li data-end="1826" data-start="1801"><strong data-end="1809" data-start="1803">解釋</strong>：在仿真中控制機器人或系統的程式。</li>
+<li data-end="1950" data-start="1830"><strong data-end="1838" data-start="1832">用法</strong>："A controller is a computer program that controls a robot specified in a world file."（控制器是控制在世界檔案中指定的機器人的電腦程式。）</li>
+</ul>
+</li>
+<li data-end="2157" data-start="1952">
+<p data-end="1974" data-start="1956"><strong data-end="1974" data-start="1956">Supervisor（主管）</strong></p>
+<ul data-end="2157" data-start="1979">
+<li data-end="2011" data-start="1979"><strong data-end="1987" data-start="1981">解釋</strong>：一種特殊的控制器，具有比普通控制器更多的權限。</li>
+<li data-end="2157" data-start="2016"><strong data-end="2024" data-start="2018">用法</strong>："The Supervisor controller is the controller of a Robot whose supervisor field is set to TRUE..."（主管控制器是控制一個設置了主管欄位為 TRUE 的機器人的控制器。）</li>
+</ul>
+</li>
+<li data-end="2311" data-start="2159">
+<p data-end="2180" data-start="2163"><strong data-end="2180" data-start="2163">Privilege（特權）</strong></p>
+<ul data-end="2311" data-start="2185">
+<li data-end="2210" data-start="2185"><strong data-end="2193" data-start="2187">解釋</strong>：賦予用戶或系統的特殊權限或優勢。</li>
+<li data-end="2311" data-start="2215"><strong data-end="2223" data-start="2217">用法</strong>："The Supervisor controller will have access to privileged operations."（主管控制器將可以訪問特權操作。）</li>
+</ul>
+</li>
+<li data-end="2493" data-start="2313">
+<p data-end="2331" data-start="2317"><strong data-end="2331" data-start="2317">Plugin（插件）</strong></p>
+<ul data-end="2493" data-start="2336">
+<li data-end="2359" data-start="2336"><strong data-end="2344" data-start="2338">解釋</strong>：一種可以增加功能的軟體元件。</li>
+<li data-end="2493" data-start="2364"><strong data-end="2372" data-start="2366">用法</strong>："An optional physics plugin that can be used to modify Webots regular physics behavior."（一個可選的物理插件，用來修改 Webots 常規的物理行為。）</li>
+</ul>
+</li>
+<li data-end="2684" data-start="2495">
+<p data-end="2516" data-start="2499"><strong data-end="2516" data-start="2499">Hierarchy（層級）</strong></p>
+<ul data-end="2684" data-start="2521">
+<li data-end="2550" data-start="2521"><strong data-end="2529" data-start="2523">解釋</strong>：專案或物件按等級或層次排列的系統或結構。</li>
+<li data-end="2684" data-start="2555"><strong data-end="2563" data-start="2557">用法</strong>："Worlds are organized as hierarchical structures where objects can contain other objects..."（世界被組織為層級結構，其中物件可以包含其他物件...）</li>
+</ul>
+</li>
+<li data-end="2901" data-start="2686">
+<p data-end="2723" data-start="2690"><strong data-end="2723" data-start="2690">Prototype File (.proto)（原型檔案）</strong></p>
+<ul data-end="2901" data-start="2728">
+<li data-end="2766" data-start="2728"><strong data-end="2736" data-start="2730">解釋</strong>：Webots 中用於定義可重用物件模型及其屬性的檔案格式。</li>
+<li data-end="2901" data-start="2771"><strong data-end="2779" data-start="2773">用法</strong>："The .wbt file does sometimes depend on external PROTO files (.proto) and textures."（.wbt 檔案有時依賴外部的 PROTO 檔案（.proto）和紋理。）</li>
+</ul>
+</li>
+<li data-end="3093" data-start="2903">
+<p data-end="2926" data-start="2907"><strong data-end="2926" data-start="2907">Environment（環境）</strong></p>
+<ul data-end="3093" data-start="2931">
+<li data-end="2954" data-start="2931"><strong data-end="2939" data-start="2933">解釋</strong>：機器人操作的周圍條件或背景。</li>
+<li data-end="3093" data-start="2959"><strong data-end="2967" data-start="2961">用法</strong>："A world in Webots is a 3D description of the properties of robots and of their environment."（Webots 中的世界是對機器人及其環境屬性的 3D 描述。）</li>
+</ul>
+</li>
+<li data-end="3379" data-start="3095">
+<p data-end="3129" data-start="3099"><strong data-end="3129" data-start="3099">Privilege Operations（特權操作）</strong></p>
+<ul data-end="3379" data-start="3134">
+<li data-end="3173" data-start="3134"><strong data-end="3142" data-start="3136">解釋</strong>：通常只能由人類操作員執行的操作，主管控制器可以執行這些操作。</li>
+<li data-end="3379" data-start="3178"><strong data-end="3186" data-start="3180">用法</strong>："The privileged operations include simulation control, for example, moving the robots to a random position, making a video capture of the simulation, etc."（特權操作包括仿真控制，例如將機器人移動到隨機位置，進行仿真視頻捕捉等。）</li>
+</ul>
+</li>
+<li data-end="3587" data-start="3381">
+<p data-end="3400" data-start="3385"><strong data-end="3400" data-start="3385">Custom（定制的）</strong></p>
+<ul data-end="3587" data-start="3405">
+<li data-end="3427" data-start="3405"><strong data-end="3413" data-start="3407">解釋</strong>：根據特定要求或偏好製作的。</li>
+<li data-end="3587" data-start="3432"><strong data-end="3440" data-start="3434">用法</strong>："Cyberbotics provides paid user support through its Premier Service plans and Custom Development services."（Cyberbotics 透過其高級服務計畫和定制開發服務提供付費用戶支持。）</li>
+</ul>
+</li>
+<li data-end="3828" data-start="3589">
+<p data-end="3619" data-start="3593"><strong data-end="3619" data-start="3593">Community-Based（社群支持的）</strong></p>
+<ul data-end="3828" data-start="3624">
+<li data-end="3653" data-start="3624"><strong data-end="3632" data-start="3626">解釋</strong>：基於用戶社群的支持或互動，而非商業服務。</li>
+<li data-end="3828" data-start="3658"><strong data-end="3666" data-start="3660">用法</strong>："Community-based support is also available in various places, however, there is no guarantee you will get an answer to your question."（社群支持也在多個地方提供，但不能保證你能得到答案。）</li>
+</ul>
+</li>
+<li data-end="4009" data-start="3830">
+<p data-end="3849" data-start="3834"><strong data-end="3849" data-start="3834">Texture（紋理）</strong></p>
+<ul data-end="4009" data-start="3854">
+<li data-end="3874" data-start="3854"><strong data-end="3862" data-start="3856">解釋</strong>：物體表面的質量或外觀。</li>
+<li data-end="4009" data-start="3879"><strong data-end="3887" data-start="3881">用法</strong>："The .wbt file does sometimes depend on external PROTO files (.proto) and textures."（.wbt 檔案有時依賴外部的 PROTO 檔案（.proto）和紋理。）</li>
+</ul>
+</li>
+</ol>
+<p data-end="4041" data-is-last-node="" data-is-only-node="" data-start="4011">這些單字對於理解 Webots 及其組件、仿真過程非常重要。</p>
+<br />webots摘要 << <a href='webots摘要.html'>Previous</a> <a href='Homework.html'>Next</a> >> Homework</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
